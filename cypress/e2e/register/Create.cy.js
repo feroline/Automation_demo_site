@@ -20,7 +20,7 @@ context('Create', () =>  {
 
             cy.get(registerLocators.TEXTAREA_ADRESS).type(data.adress).as('Address');
             // TODO: Ver depois porque esse trem tá vindo quebrado; 
-            // cy.get(registerLocators.TEXTAREA_ADRESS).should('have.value',data.adress); 
+            // cy.get('.form-control').contains(data.adress); 
             
             cy.get(registerLocators.INPUT_EMAIL).type(data.email).as('Email');
             cy.get(registerLocators.INPUT_EMAIL).should('have.value',data.email);
