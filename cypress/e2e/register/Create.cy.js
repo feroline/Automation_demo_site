@@ -3,24 +3,12 @@
 import registerLocators from "../../support/locators/register"; 
 
 context('Create', () =>  {
+    
     before(() => {
         cy.fixture('./persona').as('persona');
     });
     
-    beforeEach(() => {
-        cy.on('uncaught:exception', (err, runnable) => {
-            return false;
-        });
-
-       // cy.visit('https://demo.automationtesting.in/Register.html');
-    });
-
-    it('Verify URL', () => {
-        console.log(cy.url().should('to.be.equal', 'https://demo.automationtesting.in/Register.html'));
-    });
-
     it.only('Valid data', () => {
-        cy.visit('https://demo.automationtesting.in/Register.html');
 
         cy.get('@persona').then(data => {
         
