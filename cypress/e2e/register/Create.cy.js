@@ -31,7 +31,8 @@ context('Create', () =>  {
             cy.get(registerLocators.INPUT_LAST_NAME).should('have.value',data.last_name);
 
             cy.get(registerLocators.TEXTAREA_ADRESS).type(data.adress);
-            cy.get(registerLocators.TEXTAREA_ADRESS).contains(data.adress);
+            // cy.get(registerLocators.TEXTAREA_ADRESS).type(data.adress);
+            cy.get(registerLocators.TEXTAREA_ADRESS).should('have.value',data.adress);
         });
 
     });

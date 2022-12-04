@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "https://demo.automationtesting.in/Register.html",
+            "request": "launch",
+            "url": "https://demo.automationtesting.in/Register.html"
+        }
+    ]
+}
