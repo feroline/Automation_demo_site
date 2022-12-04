@@ -2,7 +2,9 @@
     "first_name": "Ana Carolina", 
     "last_name": "Rodrigues Rocha", 
     "age": 21,
-    "email": "giselyanonima@gmail.com", 
-    "adress": "avenida teotônio segurado, quadra 210 sul, alameda 50"
+    "email": "teste@gmail.com", 
+    "adress": "avenida teotônio, quadra 100 sul, alameda 50", 
+    "phone": "(63) 98754-5617",
+    "gender": "female"
 
 }
